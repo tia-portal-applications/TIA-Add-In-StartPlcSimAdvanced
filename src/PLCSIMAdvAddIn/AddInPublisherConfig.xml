@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PackageConfiguration xmlns=
+"http://www.siemens.com/automation/Openness/AddIn/Publisher/V17">
+  <Author>Siemens AG - SIMATIC Systems Support</Author>
+  <Description>With this TIA Add-In you can simulate controllers directly in TIA Portal with PLCSIM Advanced</Description>
+  <AddInVersion>V1.0.0</AddInVersion>
+  <Product>
+    <Name>TIA PLCSIM Advanced Simulation Add-In</Name>
+    <Id>123456789</Id>
+    <Version>1.0.0</Version>
+  </Product>
+  <DisplayInMultiuser/>
+  <FeatureAssembly>
+    <AssemblyInfo>
+      <Assembly>PLCSIMAdv.dll</Assembly>
+    </AssemblyInfo>
+  </FeatureAssembly>
+  <RequiredPermissions>
+    <TIAPermissions>
+      <TIA.ReadWrite />
+    </TIAPermissions>
+    <SecurityPermissions>
+      <Siemens.Engineering.AddIn.Permissions.ProcessStartPermission/>
+      <System.Configuration.ConfigurationPermission/>
+      <System.Security.Permissions.UIPermission/>
+      <System.Security.Permissions.FileIOPermission/>
+      <System.Security.Permissions.EnvironmentPermission/>
+      <System.Security.Permissions.FileDialogPermission/>
+      <System.Security.Permissions.RegistryPermission/>
+      <System.Security.Permissions.SecurityPermission.UnmanagedCode/>
+    </SecurityPermissions>
+  </RequiredPermissions>
+</PackageConfiguration>
